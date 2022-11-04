@@ -22,5 +22,6 @@ public class Week1
         int id = InputReader.getInt("Enter your id > ");
         System.out.println("Your id is " + id);
 
+        System.out.println("Hello World");
     } 
 }
