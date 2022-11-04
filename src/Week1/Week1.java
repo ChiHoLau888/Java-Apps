@@ -22,5 +22,15 @@ public class Week1
 
         int id = InputReader.getInt("Enter your id > ");
         System.out.println("Your id is " + id);
-    } 
+        
+        System.out.println("Calculate Rectangle");
+        System.out.println("-------------------\n");
+
+        int length = InputReader.getInt("Enter length of rectangle in cm > ");
+        int width = InputReader.getInt("Enter width of rectangle in cm > ");        
+        
+        int area = length * width;
+
+        System.out.println("\nArea = " + area + " sq cm\n");
+    }
 }
