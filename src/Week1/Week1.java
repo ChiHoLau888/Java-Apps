@@ -22,7 +22,14 @@ public class Week1
 
         int id = InputReader.getInt("Enter your id > ");
         System.out.println("Your id is " + id);
-        
+
+
+        calculateRectangle();
+
+    }
+    
+    public static void calculateRectangle()
+    {
         System.out.println("Calculate Rectangle");
         System.out.println("-------------------\n");
 
