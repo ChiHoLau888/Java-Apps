@@ -15,7 +15,7 @@ public class Week02
         System.out.println();
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
-    
+  
         do7TimesTable();
     }
 
