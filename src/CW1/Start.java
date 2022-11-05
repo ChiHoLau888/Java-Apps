@@ -12,5 +12,8 @@ public class Start
         System.out.println();
         System.out.println("By Chi Ho Lau");
         System.out.println();
+
+        MusicApp app = new MusicApp();
+        app.doMainMenu();
     }
 }
