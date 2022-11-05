@@ -42,6 +42,20 @@ public class MusicApp
     System.out.println(" 5. Quit\n");
   }
 
-  private void
+  private void addSong()
+  {
+    System.out.println(" Adding a song ");
+    String title = InputReader.getString("Please enter the title of the song >");
+    String name = InputReader.getString("Please enter the name of the artist >");
+    int count = InputReader.getInt("Please enter the number of times played >");
+
+    Song song = new Song(title, name, count);
+    songs.add(song);
+  }
+
+  private void deleteSong()
+  {
+    
+  }
 
 }
