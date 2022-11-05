@@ -55,7 +55,25 @@ public class MusicApp
 
   private void deleteSong()
   {
-    
+    printSongs(0);
+    Song song = findSong();
+    if (song != null)
+    {
+      songs.remove(song);
+    }
+    else System.out.println("Song not found");
+        printSongs(0); 
+  }
+
+  private Song findSong()
+  {
+    String deleteSong = InputReader.getString("Enter the song you want to delete >");
+    for(Song song : songs)
+    {
+      if(song.getTitle().contains(deleteSong))
+          return song;
+    }
+    return null;
   }
 
 }
