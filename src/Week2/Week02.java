@@ -15,5 +15,18 @@ public class Week02
         System.out.println();
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
+    
+        do7TimesTable();
+    }
+
+    private static void do7TimesTable() 
+    {
+        int product;
+
+        for(int value = 1; value <= 12; value++ )
+        {
+            product = value * 7;
+            System.out.println("Product = " + product);
+        }
     }     
 }
