@@ -1,5 +1,5 @@
 package CW1;
 
-public class List {
+public class Song {
     
 }
