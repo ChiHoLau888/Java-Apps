@@ -76,4 +76,54 @@ public class MusicApp
     return null;
   }
 
+  private void printSongs(int count)
+  {
+    System.out.println("\nPrinting All Songs\n");
+
+    for(Song song : songs)
+    {
+      if(song.getTimesPlayed()>count)
+          song.print();
+    }
+  }
+
+  private void printTopSongs()
+  {
+    int countTotal = InputReader.getInt("Enter the number of times played to see all songs with more times played >");
+    printSongs(countTotal);
+  }
+
+  private void addSongs()
+  {
+    Song song = new Song("Happier", "Bastille and Marshmello", 976971409);
+    songs.add(song);
+
+    song = new Song("If I Can Dream", "Elvis Presley", 653249885);
+    songs.add(song);
+
+    song = new Song("Holiday", "KSI", 48796321);
+    songs.add(song);
+
+    song = new Song("Shape of You", "Ed Sheeran", 365896145);
+    songs.add(song);
+
+    song = new Song("Yummy", "Justin Bieber", 788652147);
+    songs.add(song);
+
+    song = new Song("Waka Waka", "Shakira", 55421569);
+    songs.add(song);
+
+    song = new Song("Love Story", "Taylor Swift", 264971346);
+    songs.add(song);
+
+    song = new Song("7 Rings", "Ariana Grande", 85695327);
+    songs.add(song);
+
+    song = new Song("Despacito", "Luis Fonsi", 862778932);
+    songs.add(song);
+
+    song = new Song("Let It Go", "Idina Menzel", 66357846);
+    songs.add(song);
+  }
+
 }
