@@ -20,7 +20,7 @@ public class MusicApp
     while(!wantToQuit)
     {
       displayMenu();
-      int choice = InputReader.getInt("Please enter your song choice > ");
+      int choice = InputReader.getInt("Enter your option > ");
 
       switch(choice)
       {
