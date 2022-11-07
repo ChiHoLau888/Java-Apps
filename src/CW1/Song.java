@@ -9,7 +9,7 @@ public class Song
 
     private int timesPlayed;
 
-    public Song(String title, String name, int count)
+    public Song(String title, String name, int count) // Defining the variables.
     {
         this.title = title;
         this.artist = name;
@@ -18,7 +18,7 @@ public class Song
 
     public void print()
     {
-        System.out.println(title + " by " + artist + " - " + timesPlayed);
+        System.out.println(title + " by " + artist + " - " + timesPlayed); // This is the format the data will be displayed in.
     }
 
     public String getTitle()
