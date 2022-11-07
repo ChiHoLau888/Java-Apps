@@ -2,7 +2,15 @@ package CW1;
 import java.util.ArrayList;
 import helpers.*;
 
-public class MusicApp
+/*
+ * This class will enable the program to:
+ * 1) Add a new song to a list of songs
+ * 2) Remove a song from a list of songs
+ * 3) Print a list of all the songs stored
+ * 4) Print a list of songs over a given number of plays
+ */
+
+ public class MusicApp
 {
   private ArrayList<Song> songs;
 
@@ -20,7 +28,7 @@ public class MusicApp
     while(!wantToQuit)
     {
       displayMenu();
-      int choice = InputReader.getInt("Enter your option > ");
+      int choice = InputReader.getInt("Enter your option > "); // This allows the user to enter an option from the choices listed.
 
       switch(choice)
       {
@@ -33,7 +41,7 @@ public class MusicApp
     }
   }
 
-  public void displayMenu()
+  public void displayMenu() // This prints the different choices on the main menu.
   {
     System.out.println("\n 1. Add Song");
     System.out.println(" 2. Delete Song");
@@ -42,7 +50,7 @@ public class MusicApp
     System.out.println(" 5. Quit\n");
   }
 
-  private void addSong()
+  private void addSong() // This allows the user to add their own song and the details.
   {
     System.out.println(" Adding a song ");
     String title = InputReader.getString("Please enter the title of the song >");
@@ -53,7 +61,7 @@ public class MusicApp
     songs.add(song);
   }
 
-  private void deleteSong()
+  private void deleteSong() // This allows the user to delete a song that is stored.
   {
     printSongs(0);
     Song song = findSong();
@@ -67,7 +75,7 @@ public class MusicApp
 
   private Song findSong()
   {
-    String deleteSong = InputReader.getString("Enter the song you want to delete >");
+    String deleteSong = InputReader.getString("Enter the song you want to delete >"); // This allows the user to select the song they wish to delete.
     for(Song song : songs)
     {
       if(song.getTitle().contains(deleteSong))
@@ -76,7 +84,7 @@ public class MusicApp
     return null;
   }
 
-  private void printSongs(int count)
+  private void printSongs(int count) // This will print all the songs over a number of times played which the user has selected.
   {
     System.out.println("\nPrinting All Songs\n");
 
@@ -87,13 +95,13 @@ public class MusicApp
     }
   }
 
-  private void printTopSongs()
+  private void printTopSongs() 
   {
     int countTotal = InputReader.getInt("Enter the number of times played to see all songs with more times played >");
     printSongs(countTotal);
   }
 
-  private void addSongs()
+  private void addSongs() // This is the method which will create an array of all the songs and details already in the program.
   {
     Song song = new Song("Happier", "Bastille and Marshmello", 976971409);
     songs.add(song);
