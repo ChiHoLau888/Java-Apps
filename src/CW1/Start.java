@@ -2,7 +2,7 @@ package CW1;
 
 public class Start 
 {
-    public static void main(String[] args)
+    public static void main(String[] args) // This will be printed on the main menu when the program is run.
     {
         System.out.println("==================================");
         System.out.println("CO452 Programming Concepts 2022/23");
